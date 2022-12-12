@@ -1,0 +1,19 @@
+-- Create a store database
+
+CREATE TABLE polish (polishnumber INTEGER, price INTEGER PRIMARY KEY, name TEXT, acrylic TEXT, gel TEXT, drytime INTEGER);
+
+INSERT INTO polish VALUES (1, 7, 'ruby red', 'no', 'yes', 15);
+INSERT INTO polish VALUES (2, 8, 'sunny yellow', 'yes', 'no', 2);
+INSERT INTO polish VALUES (3, 25, 'burnt orange', 'yes', 'no', 1);
+INSERT INTO polish VALUES (4, 2, 'coral blue', 'no', 'yes', 3);
+INSERT INTO polish VALUES (5, 35, 'space grey', 'no', 'yes', 2);
+INSERT INTO polish VALUES (6, 12, 'light pink', 'yes', 'no', 4);
+INSERT INTO polish VALUES (7, 3, 'sparkle', 'no', 'yes', 6);
+INSERT INTO polish VALUES (8, 4, 'brown', 'yes', 'no', 10);
+
+-- Display the database ordered by polish number
+SELECT * FROM polish ORDER BY polishnumber;
+
+-- Display the database ordered by price
+SELECT * FROM polish ORDER BY price;
+
